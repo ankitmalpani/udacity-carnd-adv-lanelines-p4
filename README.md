@@ -140,3 +140,9 @@ This was quite an interesting project. There were may trial-error-test-repeat cy
 2. I would also like to explore some tricks we learned in the first project and try to see if we can benefit from them. I would like to solve some processing issues with canny_edge and see how they compare.
 3. I think smoothing can be improved a lot on my project. It will be a good exercise to go back and optimize some numbers that were chosen based off of some test images.
 4. I would love to read more on the topic of lane detection in general. It would be interesting to know what is used in practice and how many of the numbers needed for this project are calculated and used for accurate detection
+
+#### Some additional resources I referred to during the project:
+* https://chatbotslife.com/robust-lane-finding-using-advanced-computer-vision-techniques-46875bb3c8aa
+* https://discussions.udacity.com/t/pixel-space-to-meter-space-conversion/241646
+* https://discussions.udacity.com/t/any-information-to-check-radius-of-curvature-and-off-of-center/241681/2
+* https://discussions.udacity.com/t/trying-to-understand-sanity-check-validation-criteria-and-line-smoothing/239174
