@@ -60,7 +60,7 @@ Camera calibration was describe very well in the lecture along with basic exerci
 4. I used OpenCV's `findChessboardCorners()` method to generate imagepoints for each calibration image provided. (I ignored the ones that won't find corners in the final submission as I didn't see a real output difference)
 5. Finally, I used OpenCV's `calibrateCamera()` method to generate the camera matrix and distortion coefficients. (This used a list of obj_points and img_points)
 6. I then use OpenCV's `undistort()` method to undistort images in one of the function definitions `image_of_interest()`. This can be seen in the cell with all function defintions as described above.
-6. Note: Along the process I also used OpenCV's `drawChessboardCorners()` method to display and examine the accuracy of corners generated.
+7. Note: Along the process I also used OpenCV's `drawChessboardCorners()` method to display and examine the accuracy of corners generated.
 
 ![alt text][image12]
 
