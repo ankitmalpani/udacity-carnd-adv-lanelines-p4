@@ -104,15 +104,15 @@ This piece turned out to be tricker that I had initially expected. It involved m
 3. `get_line_predictions()`
 4. `get_histogram()`
 
+![alt text][image8] ![alt text][image9]
 ![alt text][image19] ![alt text][image20]
 
 In the method `pipeline()`, code exists to figure out frames where no lines could be found by the sliding window search, or if the line gap was an outlier - which prompted a throw-away frame(see Note after this section). In such scenarios we fall back to the previous frame for now (This probably could be improved).
 
 #### Note on averaging and smoothing:
 It is important to note that the final method `pipeline()` has the logic that maintains a running average gap between two lines and applies limits to discard anything that goes beyond that average.
-It is also important to note the method `get_averaged_line()` which basically computes and returns line predictions based on the average of last 10 frames. This probably could be improved( or at least fine tuned for an optimal average calculation)
+It is also important to note the method `get_averaged_line()` which basically computes and returns line predictions based on the average of last 10 frames. This probably could be improved( or at least fine tuned for an optimal average calculation, maybe a smaller number of frames)
 
-![alt text][image8] ![alt text][image9]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -128,14 +128,14 @@ I basically implemented this using the above mentioned method `perspective_trans
 
 ### Pipeline (video)
 
-#### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
-
-Here's a [link to my video result](./lane_lines.mp4)
+Here's a [link to output video](./lane_lines.mp4)
 
 ---
 
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
-
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+This was quite an interesting project. There were may trial-error-test-repeat cycles through out this project. I believe, what I have can be improved in various ways:
+1. This pipeline won't correctly work on the challenge videos. I would love to start exploring the challenge videos and fine tune this pipeline further
+2. I would also like to explore some tricks we learned in the first project and try to see if we can benefit from them. I would like to solve some processing issues with canny_edge and see how they compare.
+3. I think smoothing can be improved a lot on my project. It will be a good exercise to go back and optimize some numbers that were chosen based off of some test images.
