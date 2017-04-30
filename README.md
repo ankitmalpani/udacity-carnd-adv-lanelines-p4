@@ -139,3 +139,4 @@ This was quite an interesting project. There were may trial-error-test-repeat cy
 1. This pipeline won't correctly work on the challenge videos. I would love to start exploring the challenge videos and fine tune this pipeline further
 2. I would also like to explore some tricks we learned in the first project and try to see if we can benefit from them. I would like to solve some processing issues with canny_edge and see how they compare.
 3. I think smoothing can be improved a lot on my project. It will be a good exercise to go back and optimize some numbers that were chosen based off of some test images.
+4. I would love to read more on the topic of lane detection in general. It would be interesting to know what is used in practice and how many of the numbers needed for this project are calculated and used for accurate detection
