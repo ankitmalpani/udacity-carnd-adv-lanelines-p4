@@ -80,6 +80,8 @@ After plenty of different combinations of Sobel XY thresholds , Sobel magnitude 
 4. An L channel threshold for an HLS image using limits 120, 255 (This can be seen in `get_thresholded_image()`)
 5. An S channel threshold for an HLS image using limits 100, 255 (This can be seen in `get_thresholded_image()`)
 
+#### Note: All the used threshold numbers and other variables can be see in the first few lines of `pipeline()` function
+
 ![alt text][image1] ![alt text][image2]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
